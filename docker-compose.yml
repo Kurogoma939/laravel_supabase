@@ -17,6 +17,8 @@ services:
       - laravel
     depends_on:
       - postgres
+    ports:
+      - "8084:8084"
 
   postgres:
     image: postgres:latest
